@@ -509,9 +509,9 @@
     //#define DEFAULT_Ki   1.54
     //#define DEFAULT_Kd  76.55
     // New PID
-    #define DEFAULT_Kp 30.00
-    #define DEFAULT_Ki 3.15
-    #define DEFAULT_Kd 71.54
+    #define DEFAULT_Kp 24.43
+    #define DEFAULT_Ki 2.48
+    #define DEFAULT_Kd 60.22
   #endif
 #endif // PIDTEMP
 
@@ -555,9 +555,9 @@
   //#define DEFAULT_bedKd 305.4
   //
   // New PID
-  #define DEFAULT_bedKp 138.02
-  #define DEFAULT_bedKi 24.98
-  #define DEFAULT_bedKd 508.47
+  #define DEFAULT_bedKp 142.84
+  #define DEFAULT_bedKi 27.85
+  #define DEFAULT_bedKd 488.47
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -1123,7 +1123,7 @@
 
 //#define UNKNOWN_Z_NO_RAISE      // Don't raise Z (lower the bed) if Z is "unknown." For beds that fall when Z is powered off.
 
-//#define Z_HOMING_HEIGHT  4      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
+#define Z_HOMING_HEIGHT  10      // (mm) Minimal Z height before homing (G28) for Z clearance above the bed, clamps, ...
                                   // Be sure to have this much clearance over your Z_MAX_POS to prevent grinding.
 
 //#define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
